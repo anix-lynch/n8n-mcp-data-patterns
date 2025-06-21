@@ -38,49 +38,42 @@ docker run -d --name n8n-mcp \
 
 ## 📋 The 15 Patterns
 
-| Pattern | Use Case | Complexity | Business Impact |
-|---------|----------|------------|----------------|
-| 🧹 [Data Quality Audit](#1-data-quality--bias-auditing) | Clean messy datasets | ⭐⭐ | High |
-| 🔬 [Smart Feature Discovery](#2-domain-aware-feature-discovery) | Auto-generate ML features | ⭐⭐⭐ | High |
-| 🔄 [Multi-Modal Fusion](#3-multi-modal-data-fusion) | Combine text, images, data | ⭐⭐⭐⭐ | Medium |
-| 📦 [Smart API Orchestration](#4-intelligent-data-orchestration) | Rate-limit aware API calls | ⭐⭐⭐ | High |
-| 📊 [AI Insight Engine](#5-ai-powered-insight-generation) | Auto-generate hypotheses | ⭐⭐⭐⭐ | Very High |
-| 🚨 [Context-Aware Anomalies](#6-anomaly-detection--alerts) | Smart alerting system | ⭐⭐⭐ | High |
-| 📈 [Real-Time Predictions](#7-real-time-predictions) | Ensemble ML models | ⭐⭐⭐⭐ | Very High |
-| 📑 [Executive Reporting](#8-automated-reporting) | Auto-generate exec reports | ⭐⭐ | Medium |
-| 💼 [VC Portfolio Intelligence](#9-kpi-tracking-for-portco) | Track portfolio KPIs | ⭐⭐⭐⭐⭐ | Very High |
-| 📝 [Advanced NLP Pipeline](#10-advanced-nlp-tasks) | Multi-modal text analysis | ⭐⭐⭐ | Medium |
-| 🎯 [Lead Scoring Engine](#11-lead-scoring-engine) | AI-powered sales scoring | ⭐⭐⭐ | High |
-| 💰 [Smart Pricing Optimizer](#12-dynamic-pricing-optimization) | Real-time price optimization | ⭐⭐⭐⭐ | Very High |
-| 📱 [Social Media Intelligence](#13-social-media-sentiment-tracking) | Brand monitoring + sentiment | ⭐⭐ | Medium |
-| 🛒 [Customer Journey Analytics](#14-customer-journey-analytics) | Track user behavior patterns | ⭐⭐⭐⭐ | High |
-| 🔮 [Predictive Maintenance](#15-predictive-maintenance-alerts) | IoT-powered maintenance | ⭐⭐⭐⭐⭐ | Very High |
+| Pattern | Use Case | Complexity | Status |
+|---------|----------|------------|--------|
+| 🧹 [Data Quality Audit](#1-data-quality-audit) | Clean messy datasets | ⭐⭐ | 🚧 Building |
+| 🔬 [Smart Feature Discovery](#2-feature-discovery) | Auto-generate ML features | ⭐⭐⭐ | 📋 Planned |
+| 🔄 [Multi-Modal Fusion](#3-multimodal-fusion) | Combine text, images, data | ⭐⭐⭐⭐ | 📋 Planned |
+| 📦 [Smart API Orchestration](#4-api-orchestration) | Rate-limit aware API calls | ⭐⭐⭐ | 📋 Planned |
+| 📊 [AI Insight Engine](#5-insight-engine) | Auto-generate hypotheses | ⭐⭐⭐⭐ | 📋 Planned |
+| 🚨 [Context-Aware Anomalies](#6-anomaly-detection) | Smart alerting system | ⭐⭐⭐ | 📋 Planned |
+| 📈 [Real-Time Predictions](#7-predictions) | Ensemble ML models | ⭐⭐⭐⭐ | 📋 Planned |
+| 📑 [Executive Reporting](#8-reporting) | Auto-generate exec reports | ⭐⭐ | 📋 Planned |
+| 💼 [VC Portfolio Intelligence](#9-portfolio) | Track portfolio KPIs | ⭐⭐⭐⭐⭐ | 📋 Planned |
+| 📝 [Advanced NLP Pipeline](#10-nlp) | Multi-modal text analysis | ⭐⭐⭐ | 📋 Planned |
+| 🎯 [Lead Scoring Engine](#11-lead-scoring) | AI-powered sales scoring | ⭐⭐⭐ | 📋 Planned |
+| 💰 [Smart Pricing Optimizer](#12-pricing) | Real-time price optimization | ⭐⭐⭐⭐ | 📋 Planned |
+| 📱 [Social Media Intelligence](#13-social) | Brand monitoring + sentiment | ⭐⭐ | 📋 Planned |
+| 🛒 [Customer Journey Analytics](#14-journey) | Track user behavior patterns | ⭐⭐⭐⭐ | 📋 Planned |
+| 🔮 [Predictive Maintenance](#15-maintenance) | IoT-powered maintenance | ⭐⭐⭐⭐⭐ | 📋 Planned |
 
 ---
 
-## 🎯 Core Patterns
+## 🎯 Learning Path
 
-### 1️⃣ Data Quality & Bias Auditing
-**What it does:** Automatically scans datasets for missing values, bias patterns, and quality issues using Claude's domain expertise.
+**👶 Beginner (Start Here!)**
+1. 🧹 Data Quality Audit - Learn the basics
+2. 📑 Executive Reporting - Simple but powerful
+3. 📱 Social Media Intelligence - Fun and visual
 
-**Business Impact:** Prevents bad data from reaching production models. Saves 40+ hours of manual data cleaning per project.
+**🚀 Intermediate** 
+4. 🔬 Smart Feature Discovery - ML magic
+5. 🎯 Lead Scoring Engine - Business impact
+6. 🚨 Context-Aware Anomalies - Smart alerts
 
-**Files:**
-- [`patterns/01-data-quality-audit.json`](patterns/01-data-quality-audit.json) - Main workflow
-- [`scripts/01-setup.sh`](scripts/01-setup.sh) - One-click setup
-- [`examples/01-sample-data.csv`](examples/01-sample-data.csv) - Test data
-
----
-
-### 2️⃣ Domain-Aware Feature Discovery
-**What it does:** Claude analyzes your data context and suggests creative features based on domain knowledge.
-
-**Business Impact:** Discovers features human analysts miss. Improves model performance by 15-30%.
-
-**Files:**
-- [`patterns/02-feature-discovery.json`](patterns/02-feature-discovery.json) - Main workflow
-- [`scripts/02-setup.sh`](scripts/02-setup.sh) - Setup script
-- [`examples/02-retail-data.csv`](examples/02-retail-data.csv) - Sample retail dataset
+**🔥 Advanced**
+7. 📊 AI Insight Engine - Hypothesis generation
+8. 🔄 Multi-Modal Fusion - Complex data types
+9. 💼 VC Portfolio Intelligence - Enterprise-grade
 
 ---
 
@@ -88,7 +81,7 @@ docker run -d --name n8n-mcp \
 
 ### Prerequisites
 - **Claude API Key** - Get from [Anthropic Console](https://console.anthropic.com/)
-- **n8n Instance** - Local or cloud
+- **n8n Instance** - Local or cloud  
 - **Docker** (recommended) or Node.js 18+
 
 ### One-Command Setup
@@ -115,47 +108,21 @@ n8n start
 
 ---
 
-## 📚 Learning Path
+## 📚 How to Use Each Pattern
 
-**🎯 Beginner (Day 1)**
-1. Start with Pattern #1 (Data Quality Audit)
-2. Import the workflow JSON
-3. Run with sample data
-4. Understand the Claude → Python → Email flow
+Each pattern comes with:
+- 📄 **JSON workflow file** - Import directly into n8n
+- 🔧 **Setup script** - One-command environment setup  
+- 📊 **Sample data** - Test immediately
+- 📖 **Human-readable guide** - No-code explanation
 
-**🚀 Intermediate (Day 2-3)**
-5. Try Pattern #2 (Feature Discovery)
-6. Customize prompts for your domain
-7. Connect your own data sources
-
-**💪 Advanced (Week 1)**
-8. Combine multiple patterns
-9. Build custom MCP integrations
-10. Deploy to production
-
----
-
-## 🔧 Customization Guide
-
-Each pattern is designed to be **plug-and-play** but easily customizable:
-
-### Modify Claude Prompts
-```javascript
-// In any MCP node, update the prompt:
-{
-  "prompt": "As a [YOUR_DOMAIN] expert, analyze this data for [YOUR_SPECIFIC_GOAL]...",
-  "model": "claude-sonnet"  // or claude-haiku for speed
-}
-```
-
-### Add Your Data Sources
-```javascript
-// Replace HTTP Request nodes with your APIs:
-{
-  "url": "https://your-api.com/data",
-  "headers": {"Authorization": "Bearer ${YOUR_API_KEY}"}
-}
-```
+**Import Process:**
+1. Open n8n (http://localhost:5678)
+2. Click "Import from File" 
+3. Select the pattern JSON file
+4. Run the setup script
+5. Test with sample data
+6. Customize for your needs!
 
 ---
 
@@ -165,9 +132,20 @@ Found a pattern that rocks? Want to add more? Let's build this together! 🎉
 
 1. **Fork** this repo
 2. **Create** your pattern in `/patterns/`
-3. **Add** setup script in `/scripts/`
+3. **Add** setup script in `/scripts/`  
 4. **Include** sample data in `/examples/`
 5. **Submit** a PR with demo screenshots
+
+**Pattern Template:** [`PATTERN_TEMPLATE.md`](PATTERN_TEMPLATE.md)
+
+---
+
+## 📊 Community & Support
+
+- **GitHub Issues** - Bug reports, feature requests
+- **Discussions** - Share your wins, ask questions
+- **Medium** - [Read the full guide](https://medium.com/@anixlynch/n8n-mcp-data-patterns)
+- **Twitter** - [@anixlynch](https://twitter.com/anixlynch) for updates
 
 ---
 
@@ -175,13 +153,18 @@ Found a pattern that rocks? Want to add more? Let's build this together! 🎉
 
 **🚀 Speed Optimizations:**
 - Use `claude-haiku` for simple tasks (3x faster)
-- Batch API calls in the orchestration patterns
+- Batch API calls in orchestration patterns
 - Cache embeddings in vector DBs
 
-**💰 Cost Optimizations:**
+**💰 Cost Optimizations:**  
 - Use `claude-haiku` for data processing
 - Only use `claude-sonnet` for complex analysis
 - Implement smart retry logic
+
+**🔒 Security Best Practices:**
+- Never hardcode API keys
+- Use n8n's credential system
+- Validate all external inputs
 
 ---
 
@@ -191,6 +174,15 @@ MIT License - build amazing things! 🎯
 
 ---
 
-**⭐ Star this repo if it helped you become a data automation hero!** ⭐
+**⭐ Star this repo if it helps you become a data automation hero!** ⭐
 
 *Built with ❤️ by [@anixlynch](https://github.com/anix-lynch) - Making data automation accessible to everyone*
+
+---
+
+## 🚧 Build Status
+
+We're building this one pattern at a time to ensure quality! 
+
+**Next up:** Pattern #1 - Data Quality Audit 🧹  
+**Follow along:** [Medium Post](https://medium.com/@anixlynch/n8n-mcp-patterns) for detailed explanations
